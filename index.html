@@ -307,6 +307,10 @@ footer .fbrand{color:#fff;letter-spacing:.08em;font-size:16px}
 footer .fmail{color:rgba(255,255,255,.85);text-decoration:none;transition:color .3s}
 footer .fmail:hover{color:var(--lemon)}
 footer .fnote{font-size:13px;color:rgba(255,255,255,.6)}
+footer .fright{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+footer .flegal{display:flex;gap:16px;font-size:13px}
+footer .flegal a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .3s}
+footer .flegal a:hover{color:var(--lemon)}
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width:980px){
@@ -392,6 +396,7 @@ a,button{-webkit-tap-highlight-color:transparent}
   footer{padding:28px 0}
   footer .ftop{flex-direction:column;align-items:center;text-align:center;gap:14px}
   footer .fleft{align-items:center}
+  footer .fright{align-items:center}
 }
 @media (max-width:360px){
   .btn{padding:12px 14px;font-size:13.5px}
@@ -636,7 +641,7 @@ a,button{-webkit-tap-highlight-color:transparent}
 <footer>
   <div class="wrap ftop">
     <div class="fleft"><b class="fbrand">GINGER BREW</b><a class="fmail" href="mailto:info@gingerbrew.de">info@gingerbrew.de</a></div>
-    <span class="fnote">Enthält Alkohol – Don't drink and drive.</span>
+    <div class="fright"><span class="fnote">Enthält Alkohol – Don't drink and drive.</span><nav class="flegal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></div>
   </div>
 </footer>
 
